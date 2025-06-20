@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parasshyfa</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Parasshyfa</h1>
+        <p>Wedding Makeup Artist</p>
+      </div>
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#pricelist">Pricelist</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="theme-toggle">
+        <div class="moon-icon"><i class="fas fa-moon"></i></div>
+        <div class="star star1"></div>
+        <div class="star star2"></div>
+        <div class="sun-icon"><i class="fas fa-sun"></i></div>
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Transform Your Special Day</h1>
+        <p>Professional makeup and styling services for your wedding day</p>
+        <a href="#contact" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2 class="section-title">Our Gallery</h2>
+      <p class="section-subtitle">Discover our beautiful makeup styles</p>
+      
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-category="modern-hijab">Modern Hijab</button>
+        <button class="tab-btn" data-category="solo-putri-hijab">Solo Putri Hijab</button>
+        <button class="tab-btn" data-category="bali-bride">Bali Bride</button>
+        <button class="tab-btn" data-category="banjar-bride">Banjar Bride</button>
+        <button class="tab-btn" data-category="paes-ageng-pembayun">Paes Ageng Pembayun</button>
+        <button class="tab-btn" data-category="minang-bride">Minang Bride</button>
+        <button class="tab-btn" data-category="jogja-putri">Jogja Putri</button>
+        <button class="tab-btn" data-category="paes-ageng-jangan-menir">Paes Ageng Jangan Menir</button>
+        <button class="tab-btn" data-category="solo-putri">Solo Putri</button>
+        <button class="tab-btn" data-category="modern">Modern</button>
+        <button class="tab-btn" data-category="sunda-siger">Sunda Siger</button>
+      </div>
+
+      <div class="gallery-container">
+        <!-- Modern Hijab Slideshow -->
+        <div class="slideshow-container active" id="modern-hijab-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="modern1.jpeg" alt="Modern Hijab Style 1"></div>
+            <div class="slide"><img src="modern2.jpeg" alt="Modern Hijab Style 2"></div>
+            <div class="slide"><img src="modern3.jpeg" alt="Modern Hijab Style 3"></div>
+            <div class="slide"><img src="modern4.jpeg" alt="Modern Hijab Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Solo Putri Hijab Slideshow -->
+        <div class="slideshow-container" id="solo-putri-hijab-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="soloputri1.jpeg" alt="Solo Putri Hijab Style 1"></div>
+            <div class="slide"><img src="soloputri3.jpeg" alt="Solo Putri Hijab Style 2"></div>
+            <div class="slide"><img src="soloputri4.jpeg" alt="Solo Putri Hijab Style 3"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Bali Bride Slideshow -->
+        <div class="slideshow-container" id="bali-bride-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="balibride1.jpeg" alt="Bali Bride Style 1"></div>
+            <div class="slide"><img src="balibride2.jpeg" alt="Bali Bride Style 2"></div>
+            <div class="slide"><img src="balibride3.jpeg" alt="Bali Bride Style 3"></div>
+            <div class="slide"><img src="balibride4.jpeg" alt="Bali Bride Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Banjar Bride Slideshow -->
+        <div class="slideshow-container" id="banjar-bride-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="banjarbride1.jpeg" alt="Banjar Bride Style 1"></div>
+            <div class="slide"><img src="banjarbride2.jpeg" alt="Banjar Bride Style 2"></div>
+            <div class="slide"><img src="banjarbride3.jpeg" alt="Banjar Bride Style 3"></div>
+            <div class="slide"><img src="banjarbride4.jpeg" alt="Banjar Bride Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Paes Ageng Pembayun Slideshow -->
+        <div class="slideshow-container" id="paes-ageng-pembayun-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="paesageng1.jpeg" alt="Paes Ageng Pembayun Style 1"></div>
+            <div class="slide"><img src="paesageng2.jpeg" alt="Paes Ageng Pembayun Style 2"></div>
+            <div class="slide"><img src="paesageng3.jpeg" alt="Paes Ageng Pembayun Style 3"></div>
+            <div class="slide"><img src="paesageng4.jpeg" alt="Paes Ageng Pembayun Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Minang Bride Slideshow -->
+        <div class="slideshow-container" id="minang-bride-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="minangbride1.jpeg" alt="Minang Bride Style 1"></div>
+            <div class="slide"><img src="minangbride2.jpeg" alt="Minang Bride Style 2"></div>
+            <div class="slide"><img src="minangbride3.jpeg" alt="Minang Bride Style 3"></div>
+            <div class="slide"><img src="minangbride4.jpeg" alt="Minang Bride Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Jogja Putri Slideshow -->
+        <div class="slideshow-container" id="jogja-putri-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="jogjaputri1.jpeg" alt="Jogja Putri Style 1"></div>
+            <div class="slide"><img src="jogjaputri2.jpeg" alt="Jogja Putri Style 2"></div>
+            <div class="slide"><img src="jogjaputri3.jpeg" alt="Jogja Putri Style 3"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Paes Ageng Jangan Menir Slideshow -->
+        <div class="slideshow-container" id="paes-ageng-jangan-menir-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="paesagengjangan1.jpeg" alt="Paes Ageng Jangan Menir Style 1"></div>
+            <div class="slide"><img src="paesagengjangan2.jpeg" alt="Paes Ageng Jangan Menir Style 2"></div>
+            <div class="slide"><img src="paesagengjangan3.jpeg" alt="Paes Ageng Jangan Menir Style 3"></div>
+            <div class="slide"><img src="paesagengjangan4.jpeg" alt="Paes Ageng Jangan Menir Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Solo Putri Slideshow -->
+        <div class="slideshow-container" id="solo-putri-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="soloputribiasa1.jpeg" alt="Solo Putri Style 1"></div>
+            <div class="slide"><img src="soloputribiasa2.jpeg" alt="Solo Putri Style 2"></div>
+            <div class="slide"><img src="soloputribiasa3.jpeg" alt="Solo Putri Style 3"></div>
+            <div class="slide"><img src="soloputribiasa4.jpeg" alt="Solo Putri Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Modern Slideshow -->
+        <div class="slideshow-container" id="modern-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="modernn1.jpeg" alt="Modern Style 1"></div>
+            <div class="slide"><img src="modernn2.jpeg" alt="Modern Style 2"></div>
+            <div class="slide"><img src="modernn3.jpeg" alt="Modern Style 3"></div>
+            <div class="slide"><img src="modernn4.jpeg" alt="Modern Style 4"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+
+        <!-- Sunda Siger Slideshow -->
+        <div class="slideshow-container" id="sunda-siger-slideshow">
+          <div class="slides">
+            <div class="slide"><img src="sundasiger1.jpeg" alt="Sunda Siger Style 1"></div>
+            <div class="slide"><img src="sundasiger2.jpeg" alt="Sunda Siger Style 2"></div>
+            <div class="slide"><img src="sundasiger3.jpeg" alt="Sunda Siger Style 3"></div>
+            <div class="slide"><img src="sundasiger4.jpeg" alt="Sunda Siger Style 4"></div>
+            <div class="slide"><img src="sundasiger5.jpeg" alt="Sunda Siger Style 5"></div>
+          </div>
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+          <div class="dots-container"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricelist Section -->
+  <section id="pricelist" class="pricelist">
+    <div class="container">
+      <h2 class="section-title">Our Packages</h2>
+      <p class="section-subtitle">Find the perfect package for your special day</p>
+      
+      <div class="packages">
+        <div class="package-card">
+          <div class="package-img">
+            <img src="p7.jpeg" alt="Makeup Wisuda">
+          </div>
+          <div class="package-details">
+            <h3>Makeup Wisuda Untuk 1 Orang</h3>
+            <p class="price">Rp 200.000</p>
+            <ul>
+              <li>Makeup + Hijab DO</li>
+              <li>NB: Hairdo + 100rb (Tergantung Model)</li>
+            </ul>
+            <a href="#contact" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="p8.jpeg" alt="Makeup Wisuda">
+          </div>
+          <div class="package-details">
+            <h3>Makeup Wisuda Untuk 3 Orang</h3>
+            <p class="price">Rp 550.000</p>
+            <ul>
+              <li>Makeup + Hijab DO</li>
+              <li>NB: Hairdo + 100rb (Tergantung Model)</li>
+            </ul>
+            <a href="#contact" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="p9.jpeg" alt="Makeup Wisuda">
+          </div>
+          <div class="package-details">
+            <h3>Makeup Wisuda Untuk 5 Orang</h3>
+            <p class="price">Rp 950.000</p>
+            <ul>
+              <li>Makeup + Hijab DO</li>
+              <li>NB: Hairdo + 100rb (Tergantung Model)</li>
+            </ul>
+            <a href="#contact" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="package-card">
+            <div class="package-img">
+              <img src="p5.jpeg" alt="Muslim Modern Paket Akad">
+            </div>
+            <div class="package-details">
+              <h3>Muslim Modern Paket Akad</h3>
+              <p class="price">Rp 3.000.000</p>
+              <ul>
+                <li>Makeup Sepasang Pengantin</li>
+                <li>Sepasang Busana Pengantin</li>
+                <li>Free: Fresh Melati,Soflents,
+                  ,Nailart,Handboquet</li>
+              </ul>
+              <a href="#contact" class="btn">Book Now</a>
+            </div>
+          </div>
+          <div class="package-card">
+            <div class="package-img">
+              <img src="p6.jpeg" alt="Muslim Modern Paket Akad + Resepsi">
+            </div>
+            <div class="package-details">
+              <h3>Muslim Modern Paket Akad + Resepsi</h3>
+              <p class="price">Rp 4.000.000</p>
+              <ul>
+                <li>Makeup Sepasang Pengantin</li>
+                <li>Sepasang Busana Akad</li>
+                <li>Sepasang Busana Resepsi</li>
+                <li>Makeup+Busana Sepasang Ortu</li>
+                <li>Makeup+Busana Sepasang Besan</li>
+                <li>Makeup+Busana 2 Penjaga Buku Tamu</li>
+                <li>Free: Fresh Melati,Handboquet,Soflents,
+                  Nailart(Kuku Palsu)</li>
+              </ul>
+              <a href="#contact" class="btn">Book Now</a>
+            </div>
+          </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="p2.jpeg" alt="Solo Putri Berkerudung,Sunda Siger,Jogja Berkerudung">
+          </div>
+          <div class="package-details">
+            <h3>Solo Putri Berkerudung,Sunda Siger,Jogja Berkerudung</h3>
+            <p class="price">Rp 5.000.000</p>
+            <ul>
+              <li>Makeup 1 Pasang Pengantin</li>
+              <li>1 Pasang Busana Akad</li>
+              <li>1 Pasang Busana Resepsi</li>
+              <li>Makeup+Busana 1 Pasang Ortu</li>
+              <li>Makeup+Busana 1 Pasang Besan</li>
+              <li>Makeup+Busana 2 Penjaga Buku Tamu</li>
+              <li>Free: Melati,Handboquet,Softlents,
+                Nailart</li>
+            </ul>
+            <a href="#contact" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="p3.jpeg" alt="Jogja Putri & Solo Putri">
+          </div>
+          <div class="package-details">
+            <h3>Jogja Putri & Solo Putri</h3>
+            <p class="price">Rp 6.000.000</p>
+            <ul>
+              <li>Makeup 1 Pasang Pengantin</li>
+              <li>1 Pasang Busana Akad</li>
+              <li>1 Pasang Busana Resepsi</li>
+              <li>Makeup+Busana 1 Pasang Ortu</li>
+              <li>Makeup+Busana 1 Pasang Besan</li>
+              <li>Makeup+Busana 2 Penjaga Buku Tamu</li>
+              <li>Free: Melati,Handboquet,
+                Nailart,Soflents,Normal Wedding</li>
+            </ul>
+            <a href="#contact" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="p1.jpeg" alt="Paes Ageng Jangan Menir,Paes Ageng Pembayun(SBY)">
+          </div>
+          <div class="package-details">
+            <h3>Paes Ageng Jangan Menir,Paes Ageng Pembayun(SBY)</h3>
+            <p class="price">Rp 6.500.000</p>
+            <ul>
+              <li>Makeup 1 Pasang Pengantin</li>
+              <li>1 Pasang Busana Akad</li>
+              <li>1 Pasang Busana Resepsi+Touch Up</li>
+              <li>Makeup+Busana Sepasang Ortu</li>
+              <li>Makeup+Busana Sepasang Besan</li>
+              <li>Makeup+Busana 2 Penjaga Buku Tamu</li>
+              <li>Free: Melati,Handboquet,Softlents,
+                Nailart</li>
+            </ul>
+            <a href="#contact" class="btn">Book Now</a>
+          </div>
+        </div>
+        <div class="package-card">
+          <div class="package-img">
+            <img src="p4.jpeg" alt="Paes Ageng Jogja Basahan & Solo Basahan">
+          </div>
+          <div class="package-details">
+            <h3>Paes Ageng Jogja Basahan & Solo Basahan</h3>
+            <p class="price">Rp 7.000.000</p>
+            <ul>
+              <li>1 Pasang Busana Akad</li>
+              <li>1 Pasang Busana Resepsi</li>
+              <li>Retouch Makeup</li>
+              <li>Makeup+Busana Sepasang Ortu</li>
+              <li>Makeup+Busana 2 Penjaga Buku Tamu</li>
+              <li>Free: Fresh Melati,Handboquet,Soflents,
+                Normal Wedding,Nailart(Kuku Palsu)</li>
+            </ul>
+            <a href="#contact" class="btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Parasshyfa</h2>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="soloputri5.jpeg" alt="Parasshyfa Founder">
+        </div>
+        <div class="about-text">
+            <p>
+                Didirikan pada tahun 2018, Parasshyfa adalah layanan tata rias pengantin profesional yang memadukan keanggunan tradisional dengan teknik modern. Dengan pengalaman lebih dari 7 tahun dan ratusan pengantin yang telah dilayani, kami berkomitmen untuk membantu setiap pengantin tampil memukau dan merasa percaya diri di hari istimewanya.
+            </p>
+            <p>
+                Kami menawarkan layanan tata rias yang disesuaikan dengan fitur unik, preferensi, dan tema pernikahan Anda. Di Parasshyfa, kami hanya menggunakan produk tata rias berkualitas tinggi dan tahan lama untuk memastikan Anda tampil sempurna dari upacara hingga tarian terakhir.
+            </p>
+            <p class="italic text-pink-600">
+                ✨ Karena setiap pengantin berhak untuk bersinar.
+            </p>
+            <p>
+                📅 Book your bridal makeup session today!
+            </p>
+        </div>        
+          
+          <div class="achievements">
+            <div class="achievement">
+              <h3>500+</h3>
+              <p>Happy Brides</p>
+            </div>
+            <div class="achievement">
+              <h3>7+</h3>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">Book an appointment or ask us anything</p>
+
+    <div class="contact-content">
+      <div class="contact-form">
+        <form id="booking-form" onsubmit="sendWhatsAppMessage(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Wedding Date</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="">Select a package</option>
+              <option value="Makeup Wisuda Untuk 1 Orang">Makeup Wisuda Untuk 1 Orang</option>
+              <option value="Makeup Wisuda Untuk 3 Orang">Makeup Wisuda Untuk 3 Orang</option>
+              <option value="Makeup Wisuda Untuk 5 Orang">Makeup Wisuda Untuk 5 Orang</option>
+              <option value="Muslim Modern Paket Akad">Muslim Modern Paket Akad</option>
+              <option value="Muslim Modern Paket Akad + Resepsi">Muslim Modern Paket Akad + Resepsi</option>
+              <option value="Solo Putri Berkerudung, Sunda Siger, Jogja Berkerudung">Solo Putri Berkerudung, Sunda Siger, Jogja Berkerudung</option>
+              <option value="Jogja Putri & Solo Putri">Jogja Putri & Solo Putri</option>
+              <option value="Paes Ageng Jangan Menir, Paes Ageng Pembayun(SBY)">Paes Ageng Jangan Menir, Paes Ageng Pembayun(SBY)</option>
+              <option value="Paes Ageng Jogja Basahan & Solo Basahan">Paes Ageng Jogja Basahan & Solo Basahan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Our Location</h3>
+            <p>Jl. M. Adisucipto A3, Trirenggo, Bantul, Yk (Depan Polsek Bantul)</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3>Phone Number</h3>
+            <p><a href="https://wa.me/6287772234446" target="_blank">+62 877-7223-4446</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email Address</h3>
+            <p><a href="mailto:parasshyfawedding@gmail.com">parasshyfamahkotakencana@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="social-links">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://instagram.com/parasshyfawedding.id" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/6287772234446" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://facebook.com/parasshyfawedding.id" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="mailto:parasshyfawedding@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://tiktok.com/@parasshyfamahkotakencana.id" target="_blank" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Parasshyfa</h2>
+          <p>Wedding Makeup Artist</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricelist">Pricelist</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Info</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Jl. M. Adisucipto A3,Trirenggo,Bantul,Yk</p>
+          <p><i class="fas fa-phone"></i> +62 877-7223-4446</p>
+          <p><i class="fas fa-envelope"></i> parasshyfamahkotakencana@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Parasshyfa. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
